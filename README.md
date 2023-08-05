@@ -13,4 +13,6 @@ To convert tabular data into images, the 'IGTD.ipynb' file is used. The code in 
 
 For creating models to predict warfarin dosage, three separate notebook files are available. The 'CNN - No Scaling implementation.ipynb' file creates models for the entire dataset. The 'CNN - No Scaling implementation -AA.ipynb' file focuses on models specifically for the AA Cohort, while the 'CNN - No Scaling implementation -EUR.ipynb' file is used for models specific to the EUR Cohort.
 
+gexpGAINCNNtry.ipynb file is not part of the main project, it was an experiment to create a convolutional Neural Network with GAIN model to apply imputation on missing pixels of IGTD generated images.
+
 By executing the appropriate notebook files and modifying necessary paths, each aspect of the project can be implemented. These files collectively enable gene tissue expression imputation, baseline comparisons, signature identification, image creation, and model development for warfarin dosage prediction.
