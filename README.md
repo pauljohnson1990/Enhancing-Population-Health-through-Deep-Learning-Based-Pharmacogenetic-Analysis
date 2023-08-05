@@ -1,18 +1,18 @@
-# Enhancing-Population-Health-through-Deep-Learning-Based-Pharmacogenetic-Analysis
-EPH-Gain based architecture for imputation, Tabular data - Image - CNN - predict residual dosage, Signature Identification using LASSOCV
+# Deep-Learning-GAIN-Pharmacogenetic-Analysis
+The proposed architecture utilizes EPH-Gain for imputation in tabular data and incorporates a CNN for image processing. The model aims to predict residual dosage and also employs LASSOCV for signature identification.
 
-The implementation of the project involves running specific notebook files. Here is an overview of each file and its corresponding functionality:
+Executing various notebook files, each serving a specific purpose. Here is a summary of each file and its corresponding functionality:
 
-The 'gexpGAIN.ipynb' notebook implements the EPH (Enhanced Population Health) method for imputing missing gene tissue expression data in the AA Cohort, EUR Cohort, and the Total Data. Running this notebook handles the imputation process for the entire gene tissue expression dataset.
+The notebook named 'gexpGAIN.ipynb' is dedicated to implementing the EPH (Enhanced Population Health) technique for imputing missing gene tissue expression data. It carries out this imputation process for the AA Cohort, EUR Cohort, and the entire Total Data, effectively handling missing values across the gene tissue expression dataset.
 
-In the 'baseline.ipynb' file, various imputation methods such as Average, Median, KNN, and MICE are compared. The purpose of this file is to evaluate and compare the performance of these baseline methods in imputing gene tissue expressions.
+The 'baseline.ipynb' notebook conducts a comparative analysis of several imputation methods, including Average, Median, KNN, and MICE. Its primary objective is to assess and contrast the performance of these baseline techniques when applied to impute gene tissue expressions.
 
-The 'SignatureIdentification.ipynb' notebook is used to identify cohort-specific signatures relevant to warfarin response. By running this file on the AA Cohort and EUR Cohort specific genes and tissues associated with warfarin response can be identified using the LASSO-CV method.
+The 'SignatureIdentification.ipynb' notebook serves the purpose of identifying cohort-specific signatures related to the response to warfarin. By executing this notebook on both the AA Cohort and EUR Cohort datasets, specific genes and tissues associated with warfarin response can be detected using the LASSO-CV (Least Absolute Shrinkage and Selection Operator with Cross-Validation) technique.
 
-To convert tabular data into images, the 'IGTD.ipynb' file is used. The code in this notebook should be modified to specify the correct path for the cohort-specific or total data. Running this notebook generates images for the AA, EUR, or Total Data, depending on the specified path.
+The 'IGTD.ipynb' notebook is employed to transform tabular data into images. To achieve this, it requires specific modifications to the code in order to set the correct path for either the cohort-specific data or the entire total dataset. When executed, this notebook generates images corresponding to the AA, EUR, or Total Data, depending on the path specified during the run.
 
-For creating models to predict warfarin dosage, three separate notebook files are available. The 'CNN - No Scaling implementation.ipynb' file creates models for the entire dataset. The 'CNN - No Scaling implementation -AA.ipynb' file focuses on models specifically for the AA Cohort, while the 'CNN - No Scaling implementation -EUR.ipynb' file is used for models specific to the EUR Cohort.
+Three distinct notebook files are provided for building models that predict warfarin dosage. The 'CNN - No Scaling implementation.ipynb' notebook is designed to create models for the entire dataset. On the other hand, the 'CNN - No Scaling implementation -AA.ipynb' notebook is dedicated to generating models specifically tailored to the AA Cohort. Similarly, the 'CNN - No Scaling implementation -EUR.ipynb' notebook is utilized for creating models specific to the EUR Cohort.
 
 gexpGAINCNNtry.ipynb file is not part of the main project, it was an experiment to create a convolutional Neural Network with GAIN model to apply imputation on missing pixels of IGTD generated images.
 
-By executing the appropriate notebook files and modifying necessary paths, each aspect of the project can be implemented. These files collectively enable gene tissue expression imputation, baseline comparisons, signature identification, image creation, and model development for warfarin dosage prediction.
+By running the relevant notebook files and making the necessary path adjustments, each component of the project can be successfully implemented. These files together facilitate gene tissue expression imputation, baseline method comparisons, signature identification, image generation, and model building for predicting warfarin dosage.
